@@ -11,10 +11,11 @@ module.exports = {
         "object-curly-spacing": ["error", "always"],
         "operator-linebreak": "off",
         "space-in-parens": ["error", "never"],
-        "max-len": ["error", { "code": 120 }],
+        "max-len": ["error", { code: 120 }],
         "no-undef": "off",
         "react/display-name": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
     },
 };

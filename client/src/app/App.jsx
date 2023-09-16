@@ -5,6 +5,7 @@ import AppRouter from "./router/AppRouter";
 import "./styles/app.css";
 
 const App = () => {
+
     return (
         <>
             <AppRouter />

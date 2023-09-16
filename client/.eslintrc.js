@@ -5,13 +5,14 @@ module.exports = {
         sourceType: "module",
     },
     rules: {
-        "quotes": ["error", "double"],
-        "semi": ["error", "always"],
-        "indent": ["error", 4],
+        quotes: ["error", "double"],
+        semi: ["error", "always"],
+        indent: ["error", 4],
         "object-curly-spacing": ["error", "always"],
         "operator-linebreak": "off",
         "space-in-parens": ["error", "never"],
-        "max-len": ["error", { "code": 120 }],
+        "max-len": ["error", { code: 120 }],
         "no-undef": "off",
+        "react/prop-types": "off",
     },
 };

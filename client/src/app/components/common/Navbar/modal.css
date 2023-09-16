@@ -1,0 +1,48 @@
+.modal {
+    position: absolute;
+    top: 70px;
+
+  }
+  
+  .modal__container {
+    width: 200px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal__toggle-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .modal__toggle-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .modal__menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .modal__menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .modal__menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .modal__menu li:hover {
+    background-color: #ecf0f1;
+  }
+  

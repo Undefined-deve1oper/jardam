@@ -1,8 +1,12 @@
 import React from "react";
-
+import Navbar from "./components/common/Navbar";
+import "./styles/app.css";
 const App = () => {
+    
     return (
-        <div>App</div>
+        <div>
+            <Navbar/>
+        </div>
     );
 };
 

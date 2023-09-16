@@ -1,6 +1,6 @@
 import React from "react";
 import { ToastContainer } from "react-toastify";
-import { withRouter } from "./components/ui/HOC";
+import { withRedux, withRouter } from "./components/ui/HOC";
 import AppRouter from "./router/AppRouter";
 
 const App = () => {
@@ -12,5 +12,5 @@ const App = () => {
     );
 };
 
-const AppRoutes = withRouter(App);
-export default AppRoutes;
+const AppWithStoreAndRoutes = withRedux(withRouter(App));
+export default AppWithStoreAndRoutes;

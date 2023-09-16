@@ -1,9 +1,16 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
+import { withRouter } from "./components/ui/HOC";
+import AppRouter from "./router/AppRouter";
 
 const App = () => {
     return (
-        <div>App</div>
+        <>
+            <AppRouter />
+            <ToastContainer />
+        </>
     );
 };
 
-export default App;
+const AppRoutes = withRouter(App);
+export default AppRoutes;

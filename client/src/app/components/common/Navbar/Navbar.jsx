@@ -26,19 +26,29 @@ const Navbar = () => {
                 className="header"
                 onMouseLeave={handleHeaderMouseLeave}>
                 <div className="header__container _container">
-                    <div className="header__content">
-                        <p onClick={openModal} className="header__title">
-              Происшествия
-                        </p>
-                        {isModalOpen ? <Modal firstTitle={"first"} /> : null}
-                    </div>
                     <div className="header__logo"></div>
-                    <div className="header__content">
-                        <p onClick={openModalTwo} className="header__title">
-              Точки помощи
-                        </p>
-                        {isModalOpenTwo ? <Modal firstTitle={"second"} /> : null}
-                    </div>
+                    <ul className="header__menu">
+                        <li>
+                            о нас
+                        </li>
+                        <li>
+                            <div className="header__content">
+                                <p onClick={openModal} className="header__title">
+                                Происшествия
+                                </p>
+                                {isModalOpen ? <Modal firstTitle={"first"} /> : null}
+                            </div>
+                        </li>
+                        <li>
+                            <div className="header__content">
+                                <p onClick={openModalTwo} className="header__title">
+                                    Точки помощи
+                                </p>
+                                {isModalOpenTwo ? <Modal firstTitle={"second"} /> : null}
+                            </div>
+                        </li>
+                    </ul>
+                    <div className="header__btn">оставить заявку</div>
                 </div>
             </div>
         </div>

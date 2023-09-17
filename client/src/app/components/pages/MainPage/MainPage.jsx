@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./main.css";
 import HelpForm from "../../ui/forms/HelpForm";
+import VolunterForm from "../../ui/forms/VolunterForm";
 
 const MainPage = () => {
     const [currentArea, setCurrentArea] = useState("component1");
@@ -20,11 +21,23 @@ const MainPage = () => {
                     Платформа широкого взаимодействия государства и народа в трудные времена.
                 </p>
                 <div className="main__switchers">
-                    <button onClick={() => handleSwitch("component1")} className="main__btn gray">нужна помощь</button>
-                    <button onClick={() => handleSwitch("component2")} className="main__btn">стать волонтером</button>
+                    <button
+                        onClick={() => handleSwitch("component1")}
+                        className={currentArea === "component1" ? "main__btn gray" : "main__btn"}
+                    >
+                        нужна помощь
+                    </button>
+                    <button
+                        onClick={() => handleSwitch("component2")}
+                        className={currentArea === "component2" ? "main__btn gray" : "main__btn"}
+                    >
+                        стать волонтером
+                    </button>
                 </div>
-                {currentArea === "component1" && <HelpForm />}
-                {/* {currentArea === "component2" && <BeVolunter />} */}
+                <div className="main__form">
+                    {currentArea === "component1" && <HelpForm />}
+                    {currentArea === "component2" && <VolunterForm />}
+                </div>
             </div>
         </div>
     );

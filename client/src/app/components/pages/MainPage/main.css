@@ -12,10 +12,13 @@
     border-radius: 30px;
 }
 .main__title{
+    width: 1000px;
     font-weight: 500;
     font-size: 70px;
     line-height: 84px;
     text-align: center;
+    color: #3D3D49;
+
 }
 .main__subtitle{
     width: 490px;
@@ -31,6 +34,7 @@
     display: flex;
     justify-content: center;
     column-gap: 5px;
+    margin-top: 14px;
 }
 .main__btn{
     width: 200px;
@@ -38,7 +42,12 @@
     background: #FFFFFF;
     border-radius: 10px;
 
+
 }
 .gray{
-    background: #FFFFFF1A;
+    background: #343434;
+    color: white;
+}
+.main__form{
+    margin-top: 89px;
 }

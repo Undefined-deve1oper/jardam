@@ -1,5 +1,4 @@
-import React, { useCallback, useState } from "react";
-// import { validator} from "../utils/validator";
+import { useCallback, useState } from "react";
 import { validator } from "../utils/validator";
 
 function useForm(

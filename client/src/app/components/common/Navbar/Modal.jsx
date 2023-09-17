@@ -2,7 +2,6 @@ import React from "react";
 import "./modal.css";
 
 const Modal = ({ firstTitle }) => {
-    
     return (
         <>
             {
@@ -33,5 +32,4 @@ const Modal = ({ firstTitle }) => {
         </>
     );
 };
-
 export default Modal;

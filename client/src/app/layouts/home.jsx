@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/common/Navbar";
-import MainPage from "../pages/MainPage/MainPage";
+import MainPage from "../components/pages/MainPage/MainPage";
 
 const Home = () => {
     return (

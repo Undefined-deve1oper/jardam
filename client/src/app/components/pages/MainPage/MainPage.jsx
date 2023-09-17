@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./main.css";
-import NeedHelp from "./NeedHelp";
-import BeVolunter from "./BeVolunter";
+import HelpForm from "../../ui/forms/HelpForm";
 
 const MainPage = () => {
     const [currentArea, setCurrentArea] = useState("component1");
@@ -24,8 +23,8 @@ const MainPage = () => {
                     <button onClick={() => handleSwitch("component1")} className="main__btn gray">нужна помощь</button>
                     <button onClick={() => handleSwitch("component2")} className="main__btn">стать волонтером</button>
                 </div>
-                {currentArea === "component1" && <NeedHelp />}
-                {currentArea === "component2" && <BeVolunter />}
+                {currentArea === "component1" && <HelpForm />}
+                {/* {currentArea === "component2" && <BeVolunter />} */}
             </div>
         </div>
     );

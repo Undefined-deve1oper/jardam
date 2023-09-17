@@ -1,19 +1,23 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./modal.css";
 
 const Modal = ({ firstTitle }) => {
-    
+
     return (
         <>
             {
-                firstTitle === "first" ? (  
+                firstTitle === "first" ? (
                     <div className="modal">
                         <div className="modal__container _container">
                             <ul className="modal__menu">
-                                <li>one</li>
-                                <li>one</li>
-                                <li>one</li>
-                                <li>{firstTitle}</li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
                             </ul>
                         </div>
                     </div>
@@ -21,10 +25,13 @@ const Modal = ({ firstTitle }) => {
                     <div className="modal">
                         <div className="modal__container _container">
                             <ul className="modal__menu">
-                                <li>one</li>
-                                <li>one</li>
-                                <li>one</li>
-                                <li>{firstTitle}</li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
+                                <li><NavLink to={"/chuy"}>Чуйская область</NavLink></li>
                             </ul>
                         </div>
                     </div>

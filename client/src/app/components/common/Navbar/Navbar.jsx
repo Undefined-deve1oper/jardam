@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
     function handleHeaderMouseLeave() {
-    // Закрыть модальные окна при уходе курсора из области header
+        // Закрыть модальные окна при уходе курсора из области header
         setIsModalOpen(false);
         setIsModalOpenTwo(false);
     }
@@ -28,14 +28,14 @@ const Navbar = () => {
                 <div className="header__container _container">
                     <div className="header__content">
                         <p onClick={openModal} className="header__title">
-              Происшествия
+                            Происшествия
                         </p>
                         {isModalOpen ? <Modal firstTitle={"first"} /> : null}
                     </div>
                     <div className="header__logo"></div>
                     <div className="header__content">
                         <p onClick={openModalTwo} className="header__title">
-              Точки помощи
+                            Точки помощи
                         </p>
                         {isModalOpenTwo ? <Modal firstTitle={"second"} /> : null}
                     </div>
